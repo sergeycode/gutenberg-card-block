@@ -1,0 +1,105 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.wp-block-cgb-block-sc-cards {
+	.card {
+		&-link {
+			display: block;
+			position: relative;
+			margin-bottom: 2rem;
+			font-weight: 800;
+			overflow: hidden;
+			text-decoration: none !important;
+			&:hover,
+			&:focus {
+				text-decoration: none;
+				.card-link-image {
+					transform: scale(1.1);
+				}
+				.card-link-line {
+					height: 100%;
+					opacity: 0.3;
+				}
+			}
+			&-image {
+				display: block;
+				width: 100%;
+				height: 13.5rem;
+				object-fit: cover;
+				transition: 0.4s ease-in-out;
+				@include respond-to('sm') {
+					height: 22.5rem;
+				}
+				@include respond-to('md') {
+					height: 8.8125rem;
+				}
+				@include respond-to('lg') {
+					height: 13.5rem;
+				}
+				@include respond-to('xl') {
+					height: 14.6875rem;
+				}
+			}
+			&-line {
+				position: absolute;
+				bottom: 7.1875rem;
+				width: 100%;
+				height: 0.625rem;
+				transition: 0.4s ease-in-out;
+				z-index: 2;
+			}
+			&-caption {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				position: relative;
+				height: 7.1875rem;
+				padding: 0 2rem;
+				overflow: hidden;
+				z-index: 2;
+				line-height: 1.3;
+				font-size: 1rem;
+				@include respond-to('md') {
+					font-size: 0.875rem;
+				}
+				@include respond-to('lg') {
+					font-size: 1rem;
+				}
+			}
+			&-title {
+				margin: 1rem 0 0.5rem;
+				padding: 0 1rem;
+				text-transform: uppercase;
+				font-size: 1.0625rem;
+				letter-spacing: 0.125rem;
+				@include respond-to('sm') {
+					padding: 0 1.75rem;
+				}
+				@include respond-to('xl') {
+					padding: 0 1rem;
+				}
+				@include respond-to('hd') {
+					padding: 0 1.75rem;
+				}
+			}
+			&-text {
+				padding: 0 1rem;
+				font-size: 0.9375rem;
+				font-weight: 400;
+				transition: 0.4s ease-in-out;
+				@include respond-to('sm') {
+					padding: 0 1.75rem;
+				}
+				@include respond-to('xl') {
+					padding: 0 1rem;
+				}
+				@include respond-to('hd') {
+					padding: 0 1.75rem;
+				}
+			}
+		}
+	}
+}

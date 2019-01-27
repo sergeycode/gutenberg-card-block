@@ -1,0 +1,16 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+.controls-section {
+  margin: 1rem 0; }
+  .controls-section strong {
+    margin: 0.5rem 0; }

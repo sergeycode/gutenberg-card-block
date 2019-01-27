@@ -1,0 +1,13 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.controls-section {
+	margin: 1rem 0;
+	strong {
+		margin: 0.5rem 0;
+	}
+}
